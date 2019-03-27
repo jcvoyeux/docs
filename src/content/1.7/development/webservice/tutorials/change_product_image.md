@@ -7,6 +7,9 @@ weight: 2
 
 To create a new image we are going to use the `/images/products` API. We won't use the `PrestaShopWebservice` class here but a simple curl request.
 
+With curl in command line :
+curl -k -X POST -F image=@image.jpg -u MYKEYXXXXXXXXX: https://www.mysite.com/shop/api/images/products/10 -o answer.xml 
+
 ```php
 <?php
     $url = 'http://example.com';
